@@ -1,9 +1,11 @@
-interface pokemon {
-    name: string;
-    imgSrc?: string;
+interface Pokemon {
+    pokemon: {
+        name: string;
+        imgSrc?: string;
+    };
 }
 
-function PokemonCard({ pokemon }) {
+function PokemonCard({ pokemon }: Pokemon) {
 
     return (
         <figure>
